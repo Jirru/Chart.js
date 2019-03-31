@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Tytuł strony</title>
+
+</head>
+	<body>
+		<canvas class='charts' id="canvas" height="350px;" width="600px"></canvas>
+</body>
+		
+		<script type="text/javascript">
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+			var canvasWidth = 600;
+			var canvasHeight = 350;
+			
+			ctx.beginPath();
+			ctx.strokeStyle = '#FF0000';
+			ctx.moveTo(30, 0); 
+			ctx.bezierCurveTo(60,320,150,320,600,330);
+			ctx.stroke();
+			
+			ctx.beginPath();
+			var ctx = canvas.getContext("2d");
+			ctx.moveTo(15, 0);
+			ctx.strokeStyle = '#000FFF';
+			ctx.bezierCurveTo(0,340,100,350,600,350);
+			ctx.stroke();
+			
+			ctx.beginPath();
+			var ctx = canvas.getContext("2d");
+			ctx.moveTo(15, 0);
+			ctx.strokeStyle = '#000FFF';
+			ctx.lineTo(30,0);
+			ctx.stroke();
+			
+			ctx.beginPath();
+			var ctx = canvas.getContext("2d");
+			ctx.moveTo(600, 330);
+			ctx.strokeStyle = '#000FFF';
+			ctx.lineTo(600,350);
+			ctx.stroke();
+		</script>
+</html>
